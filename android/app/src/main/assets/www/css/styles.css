@@ -1,0 +1,334 @@
+body {
+    background-color: #FDF5E6;
+}
+
+.phone {
+    background-color: #2c393f;
+    
+    position: absolute;
+    width: 180px;
+    height: 450px;
+    border-radius: 30px 30px 30px 30px;
+    left:0; right:0;
+    top:0; bottom:0;
+    margin: auto;
+}
+
+.phone::before {
+    background-color: #2c393f;
+    
+    position: absolute;
+    content:"";
+    width: 106.4%;
+    height: 91%;
+    border-radius: 40px / 1000px;
+    left:-6px;
+    top:20px;
+    margin: auto;
+}
+
+.silver-frame {
+    background-color: #dadbe0;
+
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    border-radius: 13% 13% 0 0 / 100% 100% 0 0;
+    left:0; right:0;
+    top: 0.7%;
+    margin: auto;
+}
+
+.silver-frame::before {
+    background-color: #dadbe0;
+
+    position: absolute;
+    content:"";
+    width: 100%;
+    height: 61%;
+    border-radius: 0 0 131% 131% / 0 0 260% 260%;
+    left:0; right:0;
+    top: 100%;
+    margin: auto;
+}
+
+.silver-frame-line {
+    background-color: #d2d4df;
+
+    position: absolute;
+    width: 94%;
+    height: 93%;
+    border-radius: 13% 13% 0 0 / 100% 100% 0 0;
+    left:0; right:0;
+    top: 1%;
+    margin: auto;
+}
+
+.silver-frame-line::before {
+    background-color: #d6d7dd;
+
+    position: absolute;
+    content:"";
+    width: 100%;
+    height: 58%;
+    border-radius: 0 0 131% 131% / 0 0 260% 260%;
+    left:0; right:0;
+    top: 100%;
+    margin: auto;
+}
+
+.silver-frame-inside {
+    background-color: #2c393f;
+    position: absolute;
+    width: 89.4%;
+    height: 94.4%;
+    border-radius: 13% 13% 0 0 / 106% 106% 0 0;
+    left:0; right:0;
+    top: 1%;
+    margin: auto;
+}
+
+.silver-frame-inside::before {
+    background-color: #2c393f;
+
+    position: absolute;
+    content:"";
+    width: 100%;
+    height: 42%;
+    border-radius: 0 0 111% 111% / 0 0 400% 400%;
+    left:0; right:0;
+    top: 100%;
+    margin: auto;
+}
+
+.speaker {
+    background-color: #273338;
+
+    position: absolute;
+    display : flex;
+	flex-direction: column;
+    justify-content:space-between;
+    
+    width: 10%;
+    height: 47%;
+    border-radius: 100% / 100%;
+    left:0; right:0;
+    top: 4.1%;
+    margin: auto;
+}
+
+.screen {
+    background-color: #90c466;
+
+    position: absolute;
+    width: 85%;
+    /* height: 58%; */
+    height: 58%;
+    border-radius: 28% / 800%;
+    top: 60%;
+    right:0; left: 0;
+    margin: auto;
+}
+
+canvas {
+    position: absolute;
+    width: 94%;
+    height: 95%;
+
+    top: 0; bottom: 0;
+    right:0; left: 0;
+    margin: auto;
+} 
+
+.screen::before {
+    background-color: #90c466;
+
+    position: absolute;
+    content:"";
+
+    width: 97%;
+    height: 106.7%;
+    border-radius: 551% / 40%;
+    top: -3.2%;
+    right:0; left: 0;
+    margin: auto;
+}
+
+.mid-btn {
+    background-color: #d6d7dd;
+    border-color: #2c393f;
+    border-style: solid;
+
+    border-width: 0.1mm;
+    
+    position: absolute;
+    width: 55%;
+    height: 15%;
+    border-radius: 100% / 100%;
+    top: 133%;
+    right:0; left: 0;
+    margin: auto;    
+}
+
+.mid-btn::before {
+    background-color: #53adbd;
+
+    position: absolute;
+    content:"";
+    width: 60%;
+    height: 15%;
+    border-radius: 25px;
+    left:0; right:0;
+    top: 0; bottom: 0;
+    margin: auto;
+}
+
+.call-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 70%;
+    font-weight: bold;
+    
+
+    position: absolute;
+
+    width: 15%;
+    height: 15%;
+
+    top: 135%;
+    left: 15%;
+}
+
+.arrow-btns {
+    position: absolute;
+
+    width: 25%;
+    height: 15%;
+
+    top: 122%;
+    right: 7%;
+}
+
+.arrow-btns > .left, .arrow-btns > .right {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 100%;
+    font-weight: bold;
+
+    height: 100%;
+    width: 50%;
+
+    margin-top: 25%;
+    transform: rotate(-40deg);
+}
+
+.arrow-btns > .left {
+    margin-top: 65% !important;
+}
+
+
+.keyboard {
+    position: absolute;
+    width: 95%;
+    height: 26%;
+    bottom: 10%;
+    right:0; left: 0;
+    margin: auto;
+}
+
+.col1, .col2, .col3 {
+    float: left;
+    width: 33.3%;
+    height: 100%;
+}
+
+.num, .ltr {
+    user-select: none;          /* supported by Chrome and Opera */
+    -webkit-user-select: none;  /* Safari */
+    -khtml-user-select: none;   /* Konqueror HTML */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* Internet Explorer/Edge */
+}
+
+.col1 > .btn, .col2 > .btn, .col3 > .btn {
+    background-color: #d6d7dd;
+
+    position: relative;
+    width: 75%;
+    height: 23%;
+}
+
+.col1 > .btn {
+    border-radius: 35% 65% 25% 75% / 45% 70% 30% 55%;
+    margin: 0px 5px 10px 5px;
+}
+
+.col2 > .btn {
+    border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%;
+    margin: 10px 5px 0px 5px;
+}
+
+.col3 > .btn {
+    border-radius: 65% 35% 75% 25% / 70% 45% 55% 30%;
+    margin: 0px 5px 10px 5px;
+}
+
+.btn:active, .mid-btn:active {
+    transform: scale(0.95);
+}
+
+.num {
+    position: absolute;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.ltr {
+    position: absolute;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 70%;
+    font-weight: normal;
+}
+
+.col1 > .btn > .num {
+    left: 15%;
+    top: 6%;
+}
+
+.col1 > .btn > .ltr {
+    right: 8%;
+    top: 30%;
+}
+
+.col2 > .btn > .num {
+    left: 16%;
+    top: 9%;
+}
+
+.col2 > .btn > .ltr {
+    left: 40%;
+    top: 21%;
+}
+
+.col3 > .btn > .num {
+    right: 15%;
+    top: 6%;
+}
+
+.col3 > .btn > .ltr {
+    left: 8%;
+    top: 30%;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Mono'), local('RobotoMono-Regular'), url(../font/roboto.ttf) format('truetype');
+}
